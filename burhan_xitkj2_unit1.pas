@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, db, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls,
-  DBGrids, Menus, ExtCtrls, ZConnection, ZDataset;
+  DBGrids, Menus, ExtCtrls, ZConnection, ZDataset, Grids;
 
 type
 
@@ -37,6 +37,9 @@ type
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
+    procedure DBGrid1DrawColumnCell(Sender: TObject; const Rect: TRect;
+      DataCol: Integer; Column: TColumn; State: TGridDrawState);
+    procedure Label5Click(Sender: TObject);
     procedure MenuItem1Click(Sender: TObject);
     procedure NISKeyPress(Sender: TObject; var Key: char);
     procedure TambahClick(Sender: TObject);
@@ -120,6 +123,26 @@ begin
    if MessageDlg('Konfirmasi', 'Anda yakin untuk keluar?', mtConfirmation,
    [mbYes, mbNo],0) = mrYes
   then Application.terminate;
+end;
+
+procedure TForm1.DBGrid1DrawColumnCell(Sender: TObject; const Rect: TRect;
+  DataCol: Integer; Column: TColumn; State: TGridDrawState);
+var
+  grid : TDBGrid;
+  row : integer;
+begin
+  grid := sender as TDBGrid;
+  row := grid.DataSource.DataSet.RecNo;
+  if row mod 2 = 1 then
+     grid.Canvas.Brush.Color := clSilver
+  else
+     grid.Canvas.Brush.Color := clDkGray;
+  grid.DefaultDrawColumnCell(Rect, DataCol, Column, State) ;
+end;
+
+procedure TForm1.Label5Click(Sender: TObject);
+begin
+
 end;
 
 procedure TForm1.MenuItem1Click(Sender: TObject);

@@ -1,11 +1,13 @@
 object Form1: TForm1
-  Left = 361
+  Left = 360
   Height = 463
-  Top = 45
+  Top = 19
   Width = 462
+  AutoSize = True
   Caption = 'Formulir ID siswa'
   ClientHeight = 440
   ClientWidth = 462
+  Color = clSkyBlue
   Menu = MainMenu1
   LCLVersion = '1.4.0.4'
   object NIS: TEdit
@@ -13,6 +15,7 @@ object Form1: TForm1
     Height = 27
     Top = 64
     Width = 144
+    Color = clSilver
     OnKeyPress = NISKeyPress
     TabOrder = 0
   end
@@ -21,6 +24,7 @@ object Form1: TForm1
     Height = 27
     Top = 115
     Width = 144
+    Color = clSilver
     TabOrder = 1
   end
   object Kelas: TEdit
@@ -28,6 +32,7 @@ object Form1: TForm1
     Height = 27
     Top = 168
     Width = 144
+    Color = clSilver
     TabOrder = 2
   end
   object email: TEdit
@@ -35,6 +40,7 @@ object Form1: TForm1
     Height = 27
     Top = 224
     Width = 144
+    Color = clSilver
     TabOrder = 3
   end
   object Label1: TLabel
@@ -75,6 +81,7 @@ object Form1: TForm1
     Top = 64
     Width = 75
     Caption = 'Tambah'
+    Color = clGray
     OnClick = TambahClick
     TabOrder = 4
   end
@@ -106,24 +113,31 @@ object Form1: TForm1
     TabOrder = 7
   end
   object DBGrid1: TDBGrid
+    Cursor = crIBeam
     Left = 0
-    Height = 136
-    Top = 320
+    Height = 168
+    Top = 288
     Width = 462
-    AutoEdit = False
-    Color = clWindow
+    AlternateColor = clSilver
+    AutoFillColumns = True
+    Color = clMedGray
     Columns = <>
     DataSource = DataSource1
     DefaultRowHeight = 30
+    FixedColor = clTeal
+    FixedHotColor = clGreen
+    ReadOnly = True
     TabOrder = 8
+    OnDrawColumnCell = DBGrid1DrawColumnCell
   end
   object Label5: TLabel
     Left = 8
     Height = 17
-    Top = 293
+    Top = 272
     Width = 127
     Caption = 'Data yang sudah ada  :'
     ParentColor = False
+    OnClick = Label5Click
   end
   object Panel1: TPanel
     Left = 136
