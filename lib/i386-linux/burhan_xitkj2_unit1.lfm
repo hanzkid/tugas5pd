@@ -1,0 +1,182 @@
+object Form1: TForm1
+  Left = 361
+  Height = 463
+  Top = 45
+  Width = 462
+  Caption = 'Formulir ID siswa'
+  ClientHeight = 440
+  ClientWidth = 462
+  Menu = MainMenu1
+  LCLVersion = '1.4.0.4'
+  object NIS: TEdit
+    Left = 104
+    Height = 27
+    Top = 64
+    Width = 144
+    OnKeyPress = NISKeyPress
+    TabOrder = 0
+  end
+  object Nama: TEdit
+    Left = 104
+    Height = 27
+    Top = 115
+    Width = 144
+    TabOrder = 1
+  end
+  object Kelas: TEdit
+    Left = 104
+    Height = 27
+    Top = 168
+    Width = 144
+    TabOrder = 2
+  end
+  object email: TEdit
+    Left = 104
+    Height = 27
+    Top = 224
+    Width = 144
+    TabOrder = 3
+  end
+  object Label1: TLabel
+    Left = 32
+    Height = 17
+    Top = 72
+    Width = 20
+    Caption = 'NIS'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 32
+    Height = 17
+    Top = 120
+    Width = 34
+    Caption = 'Nama'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 32
+    Height = 17
+    Top = 176
+    Width = 30
+    Caption = 'Kelas'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 32
+    Height = 17
+    Top = 232
+    Width = 35
+    Caption = 'E-mail'
+    ParentColor = False
+  end
+  object Tambah: TButton
+    Left = 304
+    Height = 25
+    Top = 64
+    Width = 75
+    Caption = 'Tambah'
+    OnClick = TambahClick
+    TabOrder = 4
+  end
+  object Button1: TButton
+    Left = 304
+    Height = 25
+    Top = 117
+    Width = 75
+    Caption = 'Edit'
+    OnClick = Button1Click
+    TabOrder = 5
+  end
+  object Button2: TButton
+    Left = 304
+    Height = 25
+    Top = 176
+    Width = 75
+    Caption = 'Hapus'
+    OnClick = Button2Click
+    TabOrder = 6
+  end
+  object Button3: TButton
+    Left = 304
+    Height = 25
+    Top = 232
+    Width = 75
+    Caption = 'Keluar'
+    OnClick = Button3Click
+    TabOrder = 7
+  end
+  object DBGrid1: TDBGrid
+    Left = 0
+    Height = 136
+    Top = 320
+    Width = 462
+    AutoEdit = False
+    Color = clWindow
+    Columns = <>
+    DataSource = DataSource1
+    DefaultRowHeight = 30
+    TabOrder = 8
+  end
+  object Label5: TLabel
+    Left = 8
+    Height = 17
+    Top = 293
+    Width = 127
+    Caption = 'Data yang sudah ada  :'
+    ParentColor = False
+  end
+  object Panel1: TPanel
+    Left = 136
+    Height = 50
+    Top = 8
+    Width = 170
+    Caption = 'Formulir'
+    TabOrder = 9
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = False
+    Properties.Strings = (
+      'AutoEncodeStrings='
+    )
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'tugaspd'
+    User = 'root'
+    Password = 'root'
+    Protocol = 'mysql-5'
+    left = 408
+    top = 72
+  end
+  object ZQuery1: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'select  * from siswa'
+    )
+    Params = <>
+    left = 411
+    top = 128
+  end
+  object ZQuery2: TZQuery
+    Connection = ZConnection1
+    Params = <>
+    left = 411
+    top = 200
+  end
+  object DataSource1: TDataSource
+    DataSet = ZQuery1
+    left = 411
+    top = 264
+  end
+  object MainMenu1: TMainMenu
+    left = 8
+    top = 8
+    object MenuItem1: TMenuItem
+      Caption = 'Tentang'
+      ShortCut = 32852
+      OnClick = MenuItem1Click
+    end
+  end
+end

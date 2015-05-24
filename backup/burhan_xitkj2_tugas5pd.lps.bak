@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="2">
+      <Unit0>
+        <Filename Value="burhan_xitkj2_tugas5pd.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="23"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="burhan_xitkj2_unit1.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="burhan_xitkj2_unit1"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="111"/>
+        <CursorPos X="80" Y="126"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+    </Units>
+    <JumpHistory Count="18" HistoryIndex="17">
+      <Position1>
+        <Filename Value="burhan_xitkj2_unit1.pas"/>
+      </Position1>
+      <Position2>
+        <Filename Value="burhan_xitkj2_unit1.pas"/>
+        <Caret Line="55" Column="19" TopLine="37"/>
+      </Position2>
+      <Position3>
+        <Filename Value="burhan_xitkj2_unit1.pas"/>
+        <Caret Line="53" Column="97" TopLine="39"/>
+      </Position3>
+      <Position4>
+        <Filename Value="burhan_xitkj2_unit1.pas"/>
+        <Caret Line="52" Column="6" TopLine="46"/>
+      </Position4>
+      <Position5>
+        <Filename Value="burhan_xitkj2_unit1.pas"/>
+        <Caret Line="68" Column="4" TopLine="51"/>
+      </Position5>
+      <Position6>
+        <Filename Value="burhan_xitkj2_unit1.pas"/>
+        <Caret Line="88" Column="5" TopLine="69"/>
+      </Position6>
+      <Position7>
+        <Filename Value="burhan_xitkj2_unit1.pas"/>
+        <Caret Line="80" Column="118" TopLine="64"/>
+      </Position7>
+      <Position8>
+        <Filename Value="burhan_xitkj2_unit1.pas"/>
+        <Caret Line="60" Column="95" TopLine="50"/>
+      </Position8>
+      <Position9>
+        <Filename Value="burhan_xitkj2_unit1.pas"/>
+        <Caret Line="81" Column="34" TopLine="74"/>
+      </Position9>
+      <Position10>
+        <Filename Value="burhan_xitkj2_unit1.pas"/>
+        <Caret Line="121" Column="5" TopLine="105"/>
+      </Position10>
+      <Position11>
+        <Filename Value="burhan_xitkj2_unit1.pas"/>
+        <Caret Line="93" Column="7" TopLine="84"/>
+      </Position11>
+      <Position12>
+        <Filename Value="burhan_xitkj2_unit1.pas"/>
+        <Caret Line="98" Column="70" TopLine="80"/>
+      </Position12>
+      <Position13>
+        <Filename Value="burhan_xitkj2_unit1.pas"/>
+        <Caret Line="100" Column="64" TopLine="87"/>
+      </Position13>
+      <Position14>
+        <Filename Value="burhan_xitkj2_unit1.pas"/>
+        <Caret Line="102" Column="64" TopLine="89"/>
+      </Position14>
+      <Position15>
+        <Filename Value="burhan_xitkj2_unit1.pas"/>
+        <Caret Line="117" Column="29" TopLine="101"/>
+      </Position15>
+      <Position16>
+        <Filename Value="burhan_xitkj2_unit1.pas"/>
+        <Caret Line="63" Column="37" TopLine="53"/>
+      </Position16>
+      <Position17>
+        <Filename Value="burhan_xitkj2_unit1.pas"/>
+        <Caret Line="64" Column="37" TopLine="54"/>
+      </Position17>
+      <Position18>
+        <Filename Value="burhan_xitkj2_unit1.pas"/>
+        <Caret Line="66" Column="37" TopLine="56"/>
+      </Position18>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>
